@@ -3,10 +3,10 @@ const path = require('path');
 
 const app = express();
 
-app.use(express.static(__dirname + '/dist/LAB03-COPY/'));
+app.use(express.static(__dirname + '/dist/lab03 - Copy/'));
 
 app.get('/*', function (req, res) {
-    res.sendFile(path.join(__dirname + '/dist/LAB03-COPY/index.html'));
+    res.sendFile(path.join(__dirname + '/dist/lab03 - Copy/index.html'));
 })
 
 app.listen(process.env.PORT || 8080);
