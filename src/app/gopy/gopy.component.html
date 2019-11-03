@@ -1,94 +1,98 @@
-<div class="container">
-    <header class="row">
-        <div class="col-12">
-            <img src="../../assets/image/kiem-tra-iq-cua-ban-1.jpg" height="200px;" width="100%">
+<header class="row">
+    <div class="col-12">
+        <img src="../../assets/image/kiem-tra-iq-cua-ban-1.jpg" height="200px;" width="100%">
 
-        </div>
-
-
-        <div class="col-12">
-            <marquee>
-                Trang web thi trăc nghiệm trực tiếp.Bạn đã học bài và sẳng sàng bắt đầu kì thi chưa?
-            </marquee>
-        </div>
+    </div>
 
 
-        <div class="col-12">
+    <div class="col-12">
+        <marquee>
+            Trang web thi trăc nghiệm trực tiếp.Bạn đã học bài và sẳng sàng bắt đầu kì thi chưa?
+        </marquee>
+    </div>
 
-            <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
+
+    <div class="col-12">
+
+        <nav class="navbar navbar-expand-lg navbar-warning bg-warning">
 
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" [routerLink]="['/productss1']" style="color: aliceblue">
-                                <h5><i>Giới thiệu</i></h5> <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" [routerLink]="['/productss2']" style="color: aliceblue">
-                                <h5><i>Liên hệ</i></h5> <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" [routerLink]="['/gopy']" style="color: aliceblue">
-                                <h5><i>Góp ý</i></h5> <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" [routerLink]="['/hoidap']" style="color: aliceblue">
-                                <h5><i>Hỏi đáp </i></h5> <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: aliceblue">
-                            <i class='far fa-smile' style='font-size:24px;color: aliceblue'></i>Danh tính
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" [routerLink]="['/productss1']" style="color: aliceblue">
+                            <h5><i>Giới thiệu</i></h5> <span class="sr-only">(current)</span>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" [routerLink]="['/dangky']">Đăng ký</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" [routerLink]="['/dangnhap']">Đăng nhập</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" [routerLink]="['/productss2']" style="color: aliceblue">
+                            <h5><i>Liên hệ</i></h5> <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" [routerLink]="['/gopy']" style="color: aliceblue">
+                            <h5><i>Góp ý</i></h5> <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" [routerLink]="['/hoidap']" style="color: aliceblue">
+                            <h5><i>Hỏi đáp </i></h5> <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: aliceblue">
+                        <i class='far fa-smile' style='font-size:24px;color: aliceblue'></i>Danh tính
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" [routerLink]="['/dangky']">Đăng ký</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" [routerLink]="['/dangnhap']">Đăng nhập</a>
 
 
-                        </div>
-                    </form>
+                    </div>
+                </form>
+
+            </div>
+        </nav>
+
+    </div>
+</header>
+
+<body style="color: black" class="row">
+
+    <div class="col-12" style="background: url('../../assets/image/manhinh.jpg');">
+        <h5 style="padding-left: 20%">Góp ý</h5>
+        <p>Qúy khách vui lòng điền vào mẫu đơn dưới đây để liên hệ với chúng tôi</p>
+        <div class="container m-auto">
+
+            <form style="text-align: -webkit-center">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Họ và tên</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tài khoản">
 
                 </div>
-            </nav>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Email</label>
+                    <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Số điện thoại</label>
+                    <input type="number" class="form-control" id="exampleInputEmail1" placeholder="sdt">
 
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Ý kiến của bạn</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ý kiến">
+                </div>
+                <button type="submit" class="btn btn-primary">Gửi</button>
+
+                <p style="color: blue">Các lời góp ý của các bạn là động lực để chúng tôi hoàn thiện bản thân</p>
+            </form>
         </div>
-    </header>
 
-    <body style="color: black">
-        <h5 style="padding-left: 40%">Góp ý</h5>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Họ và tên</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tài khoản">
+    </div>
 
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Email</label>
-                <input type="email" class="form-control" id="exampleInputPassword1" placeholder="email">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Số điện thoại</label>
-                <input type="number" class="form-control" id="exampleInputEmail1" placeholder="sdt">
-
-            </div>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Ý kiến của bạn</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ý kiến">
-            </div>
-            <button type="submit" class="btn btn-primary">Gửi</button>
-
-        </form>
-        <p style="color: blue">Các lời góp ý của các bạn là động lực để chúng tôi hoàn thiện bản thân</p>
-
-
-    </body>
-
-</div>
+</body>

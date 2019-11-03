@@ -1,0 +1,7 @@
+.form-group > input{
+    width: 50%;
+}
+.form-group >label{
+    /* float: left; */
+    color: #ffffff;
+}

@@ -75,101 +75,27 @@
                     Danh Mục Môn Học
                 </button>
             </p>
-            <div class="collapse" id="collapseExample">
+            <div class="collapse" id="collapseExample" *ngFor="let item of list">
                 <div class="card card-body ">
-                    <button type="button" class="btn btn-light">Kiểm thử và thiết kế</button>
+                    <button type="button" class="btn btn-light" [routerLink]="['/tracnghiem']">{{item.Name}}</button>
                 </div>
 
-
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">SQL Server</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Điện toán đám mây</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Lập trình PHP</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Lập trình Android nâng cao</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Lập trình Android cơ bản</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Thiết kế Layout</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Thiết kế giao diện trên Android</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Quản lý dự án vớiAgile</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Internet Marketing</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Lập trình hướng đối tượng với Java</button>
-                </div>
-                <div class="card card-body">
-                    <button type="button" class="btn btn-light">Lập trình ASP.NET</button>
-                </div>
             </div>
         </div>
         <div class="col-9">
             <div class="row">
-                <div class="col-12">
-                    <div id="demo" class="carousel slide col-12" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#demo" data-slide-to="0" class="active"></li>
-                            <li data-target="#demo" data-slide-to="1"></li>
-                            <li data-target="#demo" data-slide-to="2"></li>
-                        </ul>
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="../../assets/image/android.jpg" style="width:100%;height: 500px;">
-                                <div class="carousel-caption">
-                                    <h3>Lập trình Android</h3>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/image/asp.png" style="width:100%;height: 500px;">
-                                <div class="carousel-caption" style="color: black">
-                                    <h3>Lập trình ASP.NET</h3>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="../../assets/image/dientoandammay.jpg" style="width:100%;height: 500px">
-                                <div class="carousel-caption">
-                                    <h3>Điện toán đám mây</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-4" style="margin: 15px">
+                <div class="col-4" *ngFor="let item of list">
                     <div class="card" style="width: 18rem;">
-                        <a [routerLink]="['/products']">
-                            <img src="../../assets/image/IM.jpg" class="card-img-top" alt="...">
+                        <a [routerLink]="['/tracnghiem']" routerLinkActive="router-link-active">
+                            <img src="{{item.Logo}}" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Internet Marketing</p>
+                                <p class="card-text">{{item.Name}}</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-2"></div>
-                <div class="col-4" style="margin: 15px">
+
+                <!-- <div class="col-4" style="margin: 15px">
                     <div class="card" style="width: 18rem;">
                         <a [routerLink]="['/products']">
                             <img src="../../assets/image/java.png" class="card-img-top" alt="...">
@@ -201,7 +127,7 @@
                         </a>
                     </div>
                 </div>
-
+ -->
 
             </div>
         </div>

@@ -63,7 +63,32 @@
     </header>
 
     <body style="color: black">
-        <h5>Trang thi trắc nghiệm</h5>
+        <div class="card">
+            <div class="card-header" style="padding-left: 500px;">
+                <h4 style="color: palevioletred;">Danh sách câu hỏi </h4>
+
+            </div>
+            <div class="card-body" *ngFor="let item of list">
+                <h6 class="card-title" style="padding-left: 100px;color: red;">{{item.Text}}</h6>
+                <div class="form-check" *ngFor="let item1 of item.Answers">
+                    <!-- <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios"
+                        value="option" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        
+                    </label> -->
+                    <input type="radio" name="gender" value="male">{{item1.Text}}<br>
+                </div>
+                <!-- <ul>
+                    <li *ngIf="item.Answers">
+                        <label class="form-check-label" for="exampleRadios" *ngFor="let item1 of item.Answers">
+                            {{item1.Text}}
+                        </label>
+                    </li>
+                </ul> -->
+
+
+            </div>
+        </div>
     </body>
 
 </div>
